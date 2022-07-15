@@ -1,0 +1,23 @@
+body, html, header, h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+.background{
+    background: url("../../assets/photograph.jpeg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.center-box-name{
+    width: 25vh;
+    height: 12vh;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: rgba(108, 122, 137, .3) 
+}
