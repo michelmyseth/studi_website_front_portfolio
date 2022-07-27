@@ -30,9 +30,11 @@ function Navbar() {
                         </li>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="c">
-                            Tarifs et Prestations
-                        </a>
+                        <li className="nav-link">
+                            <Link to="/tarifs_et_prestations">
+                                Tarifs et prestation{" "}
+                            </Link>
+                        </li>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="d">
