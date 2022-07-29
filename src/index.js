@@ -4,16 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import SimpleReactLightbox from "simple-react-lightbox";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <React.StrictMode>
         <BrowserRouter>
-            <SimpleReactLightbox>
-                <App />
-            </SimpleReactLightbox>
+            <App />
         </BrowserRouter>
     </React.StrictMode>
 );

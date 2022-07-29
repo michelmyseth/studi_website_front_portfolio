@@ -14,3 +14,19 @@
 li {
     line-height: 1.8;
 }
+
+.container {
+    margin-bottom: 360px;
+}
+
+.background {
+    background: url("../../assets/img35.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: 2;
+}
+
+.service {
+    margin-top: 3vh;
+    background: rgba(108, 122, 137, 0.2);
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./GalerieStyle.css";
+import "./GaleryStyle.css";
 import img2 from "../../assets/img2.jpg";
 import img3 from "../../assets/img3.jpg";
 import img4 from "../../assets/img4.jpg";
@@ -32,8 +32,6 @@ import img30 from "../../assets/img30.jpg";
 import img31 from "../../assets/img31.jpg";
 import img32 from "../../assets/img32.jpg";
 import img33 from "../../assets/img33.jpg";
-
-import { SRLWrapper } from "simple-react-lightbox";
 
 const images = [
     { imageName: img2, tag: "mariage" },
@@ -118,21 +116,20 @@ function Galerie() {
                 />
             </div>
             <br /> <br />
-            <SRLWrapper>
-                <div className="container-image">
-                    {filteredImages.map((image, index) => (
-                        <div key={index + 1} className="image-card">
-                            <a href={image.imageName}>
-                                <img
-                                    className="image"
-                                    src={image.imageName}
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                    ))}
-                </div>
-            </SRLWrapper>
+            <div className="container-image">
+                {filteredImages.map((image, index) => (
+                    <div key={index + 1} className="image-card">
+                        <a href={image.imageName}>
+                            <img
+                                className="image"
+                                src={image.imageName}
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                ))}
+            </div>
+            <br /> <br />
         </div>
     );
 }
