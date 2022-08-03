@@ -1,7 +1,6 @@
 import React from "react";
 import "./FooterStyle.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 function Footer() {
     return (
         <>
@@ -11,10 +10,10 @@ function Footer() {
                     International / Photographe de Mode & Publicité Paris / 2022
                     <a
                         class="btn btn-outline-light btn-floating m-1"
-                        href="#!"
+                        href="https://facebook.com"
                         role="button"
                     >
-                        <FontAwesomeIcon icon="fa-brands fa-facebook" />{" "}
+                        <FacebookOutlinedIcon style={{ color: "black" }} />
                     </a>
                 </div>
             </footer>

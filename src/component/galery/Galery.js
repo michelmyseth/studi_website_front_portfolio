@@ -32,7 +32,6 @@ import img30 from "../../assets/img30.jpg";
 import img31 from "../../assets/img31.jpg";
 import img32 from "../../assets/img32.jpg";
 import img33 from "../../assets/img33.jpg";
-import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 
 const images = [
     { imageName: img2, tag: "mariage" },
@@ -72,14 +71,7 @@ const images = [
 function Galery() {
     const [tag, setTag] = useState("all");
     const [filteredImages, setFilteredImages] = useState([]);
-    const [model, setModel] = useState(false);
-    const [tempImgSrc, setTempImgSrc] = useState("");
 
-    const getImg = (imageName) => {
-        setTempImgSrc(imageName);
-        setModel(true);
-        console.log("set model open");
-    };
     useEffect(() => {
         tag === "all"
             ? setFilteredImages(images)
@@ -125,17 +117,9 @@ function Galery() {
                 />
             </div>
             <br /> <br />
-            <CloseOutlinedIcon />
-            <div className={model ? "model open" : "model"}>
-                <img src={tempImgSrc} alt="" />
-            </div>
             <div className="container-image">
                 {filteredImages.map((image, index) => (
-                    <div
-                        key={index + 1}
-                        className="image-card"
-                        onClick={() => getImg(image.imageName)}
-                    >
+                    <div key={index + 1} className="image-card">
                         <a href={image.imageName}>
                             <img
                                 className="image"
