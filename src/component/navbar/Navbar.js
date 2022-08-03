@@ -24,22 +24,16 @@ function Navbar() {
                 id="navbarNavDropdown"
             >
                 <ul className="navbar-nav">
-                    <li className="nav-item ">
-                        <li className="nav-link">
-                            <Link to="/galerie">Galerie </Link>
-                        </li>
+                    <li className="nav-link">
+                        <Link to="/galerie">Galerie </Link>
                     </li>
-                    <li className="nav-item">
-                        <li className="nav-link">
-                            <Link to="/tarifs_et_prestations">
-                                Tarifs et prestation{" "}
-                            </Link>
-                        </li>
+                    <li className="nav-link">
+                        <Link to="/tarifs_et_prestations">
+                            Tarifs et prestation{" "}
+                        </Link>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="/contact">
-                            Contact
-                        </a>
+                    <li className="nav-link">
+                        <Link to="/contact">Contact </Link>
                     </li>
                 </ul>
             </div>

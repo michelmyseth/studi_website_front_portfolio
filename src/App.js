@@ -1,16 +1,16 @@
 import "./App.css";
 import Footer from "./component/footer/Footer";
 import Home from "./component/home/Home";
-import Navbar from "./component/navbar/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Galery from "./component/galery/Galery";
 import Tarifs from "./component/tarifs/Tarifs";
 import ContactForm from "./component/form/ContactForm";
+import Navbar2 from "./component/navbar/Navbar";
 
 function App() {
     return (
         <>
-            <Navbar />
+            <Navbar2 />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/galerie" element={<Galery />} />

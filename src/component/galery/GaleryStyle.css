@@ -101,3 +101,7 @@ img {
     color: white;
     cursor: pointer;
 }
+
+.container-image .image-card:hover {
+    filter: opacity(0.8);
+}
