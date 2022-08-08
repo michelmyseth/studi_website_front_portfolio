@@ -22,8 +22,9 @@ function ContactForm() {
     return (
         <>
             <h2>Contactez-nous !</h2>
-            <br /> <br />
             <br />
+            <br />
+
             <div className="container2">
                 <form id="fs-frm" onSubmit={handleSubmit}>
                     <fieldset id="fs-frm-inputs">

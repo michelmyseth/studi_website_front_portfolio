@@ -6,7 +6,7 @@ function Footer() {
         <>
             <footer class="text-center text-lg-start bg-light text-muted">
                 <div class="text-center p-4">
-                    © ERIC OUAKNINE Fashion & Advertising Photographer Paris &
+                    © Charles Cantin Fashion & Advertising Photographer Paris &
                     International / Photographe de Mode & Publicité Paris / 2022
                     <a
                         class="btn btn-outline-light btn-floating m-1"
