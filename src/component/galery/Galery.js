@@ -32,7 +32,7 @@ import img30 from "../../assets/img30.jpg";
 import img31 from "../../assets/img31.jpg";
 import img32 from "../../assets/img32.jpg";
 import img33 from "../../assets/img33.jpg";
-
+import Modal from "./modal/Modal";
 const images = [
     { imageName: img2, tag: "mariage" },
     { imageName: img3, tag: "mariage" },
@@ -71,6 +71,11 @@ const images = [
 function Galery() {
     const [tag, setTag] = useState("all");
     const [filteredImages, setFilteredImages] = useState([]);
+    const [clickedImg, setClickedImg] = useState(null);
+    const handleClick = (e, item) => {
+        setClickedImg(item.imageName);
+        e.preventDefault();
+    };
 
     useEffect(() => {
         tag === "all"
@@ -118,17 +123,26 @@ function Galery() {
             </div>
             <br /> <br />
             <div className="container-image">
-                {filteredImages.map((image, index) => (
+                {filteredImages.map((item, index) => (
                     <div key={index + 1} className="image-card">
-                        <a href={image.imageName}>
+                        <a href={item.imageName}>
                             <img
                                 className="image"
-                                src={image.imageName}
+                                src={item.imageName}
                                 alt=""
+                                onClick={(e) => handleClick(e, item)}
                             />
                         </a>
                     </div>
                 ))}
+                <div>
+                    {clickedImg && (
+                        <Modal
+                            clickedImg={clickedImg}
+                            setClickedImg={setClickedImg}
+                        />
+                    )}
+                </div>
             </div>
             <br /> <br />
         </div>
