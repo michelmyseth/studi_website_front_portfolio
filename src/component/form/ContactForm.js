@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import "./ContactFormStyle.css";
-import img34 from "../../assets/img34.jpg";
+import img from "../../assets/img34.jpg";
 
 function ContactForm() {
     const [state, handleSubmit] = useForm("xwkzeerv");
@@ -14,7 +14,7 @@ function ContactForm() {
                 </p>
 
                 <div className="container3">
-                    <img src={img34} alt="/" />
+                    <img src={img} alt="/" />
                 </div>
             </>
         );
